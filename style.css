@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whole{
+        background-image: url('1280px-Soyuz_TMA-7_spacecraft2edit1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; /* Centers the background image */
+        overflow: hidden; /* Hides any overflow that could cause scrolling */
+        position: relative; /* Ensure that child elements are positioned relative to this container */
+}
+
+.hmm{
+    background-image: url('1280px-Soyuz_TMA-7_spacecraft2edit1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; /* Centers the background image */
+        position: relative; /* Ensure that child elements are positioned relative to this container */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a:hover {
+    color: grey; /* Black text on hover */
+    border-bottom: 3px solid rgb(219, 99, 99); /* Underline effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 20vh;
+    font-size: 48px;
+    animation: fadeIn 6s ease-in-out;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 20px;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+}
+
+.planet-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+
+.planet-card {
+    width: 200px;
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+
+.planet-card:hover {
+    transform: scale(1.1);
+}
+
+.mission {
+    margin: 20px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px; /* Add some space around each mission */
+    background-color: rgba(34, 34, 34, 0.8); /*Slightly transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Set a consistent width for cards */
+    transition: transform 0.3s; /* Animation for hover effect */
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin: 15px;
+    border: 2px solid #fff; /* Optional border for better distinction */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for images */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.gallery-item img {
+    width: 200px; /* Set width for images */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Ensure images are treated as block elements */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+h3{
+    margin-left: 150px;
+}
+
+.mission-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center the mission cards */
+    margin: 20px;
+}
+
+.mission:hover {
+    transform: scale(1.05); 
+}
+
+.hello {
+    background: url("360_F_530960431_c8fPd3HansYvrSJ4fJxZqp9OhjQmYoll.jpg"); /* Replace with your actual image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh; /* Ensures the section covers the full viewport */
+    overflow: hidden;  /* Disable scrolling */
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+    padding: 50px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 600px; /* Max width for larger screens */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    animation: fadeIn 3s ease; /* Fade-in animation for form */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin: 10px 0 5px; /* Spacing around labels */
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner spacing */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background color and scale */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale up button on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#hi {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning */
+    font-size: 24px; /* Font size for visibility */
+    color: white;
+}
+
+@keyframes launchAnimation {
+    0% {
+        transform: translate(-50%, -50%) translateY(0); /* Starting position */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-200vh); /* Move up */
+    }
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: twinkle 1s infinite alternate; /* Twinkle effect */
+}
+
+.star:nth-child(n) {
+    width: 2px; /* Star size */
+    height: 2px;
+    top: random(0, 100vh); /* Random vertical position */
+    left: random(0, 100vw); /* Random horizontal position */
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.rocket  {
+    position: absolute; /* Position the launch element absolutely */
+    left: -100px; /* Start off-screen to the left */
+    bottom: 70%; /* Center vertically */
+    transform: translateY(50%); /* Center adjustment */
+    font-size: 50px; /* Font size for the emoji */
+    animation: launchion 3s ease-in-out forwards; /* Launch animation */
+}
+
+@keyframes launchion {
+    0% {
+        left: -100px; /* Start off-screen to the left */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        left: 100vw; /* Move to the right off-screen */
+        opacity: 0; /* Fade out */
+    }
+}
